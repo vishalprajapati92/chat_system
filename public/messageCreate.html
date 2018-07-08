@@ -1,0 +1,26 @@
+<!-- <div>
+    Receiver <br>
+     <input type="text" ng-model="msg.reciverName" placeholder="Please enter reciver name"><br><br>
+     Title <br>
+     <input type="text" ng-model="msg.title" placeholder="Enter message title"><br><br>
+     Message <br>
+     <input type="text" ng-model="msg.message" placeholder="Enter message"><br><br>
+     <input type="button" value="send" ng-click="sendMessage()">
+</div> -->
+
+
+
+<form>
+    <div class="container">
+      <label for="Receiver"><b>Receiver</b></label>
+      <input type="text" ng-model="msg.reciverName" placeholder="Please enter reciver name" required>
+  
+      <label for="Title"><b>Title</b></label>
+      <input type="text" ng-model="msg.title" placeholder="Please enter message title" required>
+        
+      <label for="Message"><b>Message</b></label>
+      <input type="text" ng-model="msg.message" placeholder="Please enter message" required>
+
+      <button type="submit" ng-click="sendMessage()">Send message</button>
+    </div>
+  </form>

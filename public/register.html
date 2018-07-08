@@ -1,0 +1,42 @@
+<!-- Username  <input type="text" ng-model="user.name"  placeholder="Enter user name"/><br>
+Password  <input type="text" ng-model="user.password" placeholder="Enter user password"/><br>
+Firstname  <input type="text" ng-model="user.firstname" placeholder="Enter user firstname"/><br>
+Lastname  <input type="text" ng-model="user.lastname" placeholder="Enter user lastname"/><br>
+Email  <input type="text" ng-model="user.email" placeholder="Enter user email"/><br>
+Phone  <input type="text" ng-model="user.phone" placeholder="Enter user phone"/><br>
+Location  <input type="text" ng-model="user.location" placeholder="Enter user location"/><br><br>
+ <input type="button" ng-click="submitValue()" value="submit">
+ <div ng-if="isRegisterSuccess"> {{isSucessOrFail}} </div> -->
+
+ <div id="message" ng-if="isRegisterSuccessOrFail">
+    <p class="invalid"><b>{{showMessage}}</b></p>
+  </div>
+
+ <form>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" ng-model="user.name" placeholder="Please enter user name"/ required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" ng-model="user.password" placeholder="Please enter Password" required>
+
+      <label for="uname"><b>Firstname</b></label>
+      <input type="text" ng-model="user.firstname"  placeholder="Please enter firstname"/ required>
+
+      <label for="uname"><b>Lastname</b></label>
+      <input type="text" ng-model="user.lastname"  placeholder="Please enter lastname"/ required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" ng-model="user.email"  placeholder="Please enter email"/ required>
+
+      <label for="phone"><b>Phone</b></label>
+      <input type="text" ng-model="user.phone"  placeholder="Please enter phone"/ required>
+
+      <label for="location"><b>Location</b></label>
+      <input type="text" ng-model="user.location"  placeholder="Please enter location"/ required>
+  
+      <button type="submit" ng-click="submitValue()">Register</button> 
+    </div>
+  </form>
+  
+  

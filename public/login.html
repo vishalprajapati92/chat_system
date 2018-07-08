@@ -1,0 +1,25 @@
+<!-- <h1>Login</h1>
+<form>
+    Username <input type="text" ng-model="user.name" placeholder="Enter user name"/> <br>
+    Password <input type="text" ng-model="user.password" placeholder="Enter user password" /> <br><br>
+    <input type="button" ng-click="loginValue()" value="submit"/>
+</form>
+<div ng-if="isLoginSuccessOrFail">{{showMessage}}</div> -->
+
+
+<div id="message" ng-if="isLoginSuccessOrFail">
+  <p class="invalid"><b>{{showMessage}}</b></p>
+</div>
+
+<form>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" ng-model="user.name" placeholder="Enter Username" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" ng-model="user.password" placeholder="Enter Password" required>
+  
+      <button type="submit" ng-click="loginValue()">Login</button>
+    </div>
+</form>
+  

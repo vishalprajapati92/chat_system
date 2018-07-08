@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title> Welcome</title>
+            <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+            <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+            <script src="./js/main_page.js"></script>
+            <link rel="stylesheet" href="./js/design.css">
+    </head>
+    <body>
+            <div ng-app="messanger">
+                <div ng-controller="cntForHomepage">
+                    <div class="topnav">
+                           <a  href="#/" ng-if="isNotLogin"> Login </a>
+                            <a href="#/editProfile" ng-if="isLogin"> Edit Profile </a>  
+                            <a href="#/message" ng-if="isLogin"> Message </a> 
+                            <a href="#/logout" ng-if="isLogin"> Logout </a>  
+                            <a href="#/register" ng-if="isNotLogin"> Register </a>
+                    </div>
+                    <div ng-view="" class="subView">
+                    </div>
+                </div>
+                
+            </div>
+    </body>
+</html>

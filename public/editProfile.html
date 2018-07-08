@@ -1,0 +1,39 @@
+<!-- Username  <input type="text" ng-model="user.name" ng-value="name" placeholder="Enter user name"/><br>
+Password  <input type="text" ng-model="user.password" ng-value="password" placeholder="Enter user password"/><br>
+Firstname  <input type="text" ng-model="user.firstname" ng-value="firstname" placeholder="Enter user firstname"/><br>
+Lastname  <input type="text" ng-model="user.lastname" ng-value="lastname" placeholder="Enter user lastname"/><br>
+Email  <input type="text" ng-model="user.email" ng-value="email" placeholder="Enter user email"/><br>
+Phone  <input type="text" ng-model="user.phone" ng-value="phone" placeholder="Enter user phone"/><br>
+Location  <input type="text" ng-model="user.location" ng-value="location" placeholder="Enter user location"/><br><br>
+ <input type="button" ng-click="editValue()" value="submit"> -->
+
+        <div id="message" ng-if="isEditSuccessOrFail">
+        <p class="invalid"><b>{{showMessage}}</b></p>
+      </div>
+    
+     <form>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" ng-model="user.name" disabled>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" ng-model="user.password" placeholder="Please enter Password" required="string">
+    
+          <label for="firstname"><b>Firstname</b></label>
+          <input type="text" ng-model="user.firstname"  placeholder="Please enter firstname" required="string">
+    
+          <label for="uname"><b>Lastname</b></label>
+          <input type="text" ng-model="user.lastname"  placeholder="Please enter lastname"  required="string">
+    
+          <label for="email"><b>Email</b></label>
+          <input type="text" ng-model="user.email"  placeholder="Please enter email"  required>
+    
+          <label for="phone"><b>Phone</b></label>
+          <input type="text" ng-model="user.phone"  placeholder="Please enter phone"  required>
+    
+          <label for="location"><b>Location</b></label>
+          <input type="text" ng-model="user.location"  placeholder="Please enter location"  required>
+      
+          <button type="submit" ng-click="editValue()">Edit</button> 
+        </div>
+      </form>

@@ -1,0 +1,19 @@
+<button ng-click="createNewMessage()">Create message</button>
+
+<table id="message" border="1px">
+    <tr>
+            <th>To</th>    
+            <th>From</th>    
+            <th>Title</th>    
+            <th>Description</th>    
+            <th>Create Date</th>    
+    </tr>
+    <tr ng-repeat="msg in MessageList track by $index">
+            <td>{{msg["recipient"]}}</td>
+            <td>{{msg["sender"]}}</td> 
+            <td>{{msg["title"]}}</td>
+            <td>{{msg["description"]}}</td>
+            <td>{{msg["created_at"]}}</td>
+            <td><a href="#/message/details/{{$index}}">view detail </a></td>
+    </tr>
+</table>

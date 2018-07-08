@@ -1,0 +1,39 @@
+
+<!-- <input type="button" value="Back to message" ng-click="backToMessagePage()"> <br> <br>
+
+<div > Title : </div> <br>
+<div style="border-width:2px">{{message_detail["title"]}}</div><br> 
+<div> Description :</div><br>      
+<div style="border-width:2px">{{message_detail["description"]}}</div><br> 
+<br><br>
+
+
+
+<input type="text" name="messagetxt" ng-model="msg.replayValue" placeholder="Enter your message"> <br><br>
+<input type="button" value="Replay" ng-click="msgReplay()">
+<input type="button" value="Delete" ng-click="msgDelete()">
+<input type="button" ng-value="bookmarkName" ng-click="msgBookMark()">
+
+<div ng-if="emptyTxtString"> {{isTxtValue}}</div> -->
+
+<div class="container">
+
+    <button ng-click="backToMessagePage()">Back to message</button>
+    
+    <div class="container">
+            <label for="Title"><b>Title : </b></label>
+            <p class="message_detail"><b>{{message_detail["title"]}}</b></p>
+            <label for="msg"><b>Message</b></label>
+            <p class="message_detail"><b>{{message_detail["description"]}}</b></p>   
+    </div>
+
+    <!-- <input type="password" ng-model="user.password" placeholder="Enter Password" required> -->
+    <input type="text" name="messagetxt" ng-model="msg.replayValue" placeholder="Enter your message" required> <br><br>
+    <div> 
+        <button ng-click="msgReplay()">Replay</button>
+        <button ng-click="msgDelete()">Delete</button>
+        <button ng-click="msgBookMark()">{{bookmarkName}}</button>
+    </div>
+</div>
+
+
